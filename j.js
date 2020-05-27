@@ -348,7 +348,7 @@ var gamearea = {
 function end() {
     let scores=document.getElementById('highscores');
     scores.innerHTML='';
-   
+     sound2.play()
     console.log('over');
     highScores.push(score);
     highScores.sort((a, b) => b-a);
