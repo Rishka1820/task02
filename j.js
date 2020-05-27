@@ -11,7 +11,7 @@ var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 var sound1 = new Audio();
 sound1.src = "button.mp3";
 var sound2 = new Audio();
-sound2.src = "game.mp3";
+sound2.src = "gameover.mp3";
 var cirles = [];
 var rectangles = [];
 var stars = [];
@@ -99,13 +99,16 @@ function collide() {
     let d=0;
     for (i = 1; i < cirles.length; i++) {
         if (player.y - cirles[i].y - player.radius - cirles[i].rad <= 0 && player.y + player.radius - cirles[i].y - cirles[i].rad + cirles[i].w >= 0 && player.color != cirles[i].bottomcolor) {
-            
+            sound2.play()
            end();
+            
            
 
         }
         if (player.y - cirles[i].y - player.radius + cirles[i].rad - cirles[i].w <= 0 && player.y + player.radius - cirles[i].y + cirles[i].rad >= 0 && player.color != cirles[i].topcolor) {
-           end();
+           sound2.play()
+            end();
+            
            
         }
         
