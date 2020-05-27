@@ -1,0 +1,38 @@
+#canvas{
+  background-color: black;
+  position: absolute;
+  
+
+}
+body{
+  background-color: rgb(26, 24, 24);
+  align-content: center;
+  justify-content: center;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; 
+}
+#hs{
+  float: left;
+  color: rgb(135, 223, 21);
+  font-size: 20px;
+
+}
+#highscores{
+  
+  color: rgb(135, 223, 21);
+  font-size:20px;
+
+}
+#restart{
+  float: right;
+  background-color: rgb(26, 24, 24);
+  border: none;
+  color: rgb(135, 223, 21);
+  font-size: 20px;
+}
