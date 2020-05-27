@@ -233,7 +233,7 @@ function circleObs() {
             };
 
         }
-        this.angle += this.spd * Math.PI / 180;
+        this.angle += this.spd * Math.PI*(score+1)*0.1  / 180;
 
     }
 
